@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc2"
+    tools:context="com.example.andreia.testandoaviso.DescricaoActivity">
+
+    <ViewFlipper
+        android:id="@+id/flipperDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bc2">
+
+
+        <LinearLayout
+            android:id="@+id/viewLinear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnHome"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/atencao" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="OBS: É muito importante ressaltar que este aplicativo não é feito por profissionais da saúde, e portanto, não tem o objeto de diagnosticar possíveis problemas na visão. Apenas dá um sinal de alerta."
+                    android:textColor="#ff000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewLinear2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnHome"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/pontilhado_74" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="242dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="VISÃO DE CORES: Este é o teste de Visão de cores mais simples, disponível nos consultórios médicos. Você deve conseguir enxergar todos os números escritos dentro dos círculos. Se você não conseguir vê-los ou tiver dificuldade de identificá-los você pode ter um problema de visão de cores. O Daltonismo é o problema mais freqüente desse tipo, porém não é o único."
+                    android:textColor="#ff000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewLinear3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/artigos_4_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="TABELA DE VISÃO: O teste deve ser feito com um olho de cada vez, com seus óculos para longe se você os usar, mantenha uma distância de 33cm da tabela. Deve ser anotada a última linha dentre as seis existentes, de cima para baixo, em que você leu a maioria das letras que a compõe. Se sua acuidade é menor que 100% é interessante que você procure um oftalmolgista para um diagnóstico mais detalhado."
+                    android:textColor="#ff000000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/flipperDescricao"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnDescricaoMais"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="37dp"
+            android:background="@drawable/next"
+            android:layout_alignBaseline="@+id/btnDescricaoHome"
+            android:layout_alignBottom="@+id/btnDescricaoHome"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnDescricaoHome"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/logo"
+            android:onClick="onClickTelaMain" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
